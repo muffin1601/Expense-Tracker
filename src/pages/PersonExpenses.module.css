@@ -1,0 +1,276 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 12px 8px;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #e5e5e6;
+  border: none;
+  padding: 10px 18px;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.backBtn:hover {
+  background: #e2e8f0;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #3ecf8e;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addBtn:hover {
+  background: #2b9264;
+  box-shadow: 0 6px 20px rgba(62, 207, 142, 0.25);
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.metaInfo {
+  display: flex;
+  gap: 16px;
+  margin-top: 6px;
+}
+
+.subText {
+  color: #64748b;
+  font-size: 15px;
+}
+
+.phone {
+  background: #eef2f7;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.select {
+  padding: 10px 19px ;
+  border-radius: 32px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #3ecf8e;
+}
+
+.summaryCard {
+  background: white;
+  padding: 22px;
+  border-radius: 36px;
+  margin-bottom: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.summaryLabel {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.totalAmount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.expenseCard {
+  background: white;
+  padding: 18px 20px;
+  border-radius: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f1f5f9;
+  transition: 0.2s ease;
+}
+
+.expenseCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.05);
+}
+
+.expenseLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.iconWrapper {
+  background: #eef2f7;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.category {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.expenseRight {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.amount {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.deleteBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 6px;
+  border-radius: 8px;
+  transition: 0.2s ease;
+}
+
+.deleteBtn:hover {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 32px;
+  border-radius: 22px;
+  width: 400px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.modalTitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.closeBtn:hover {
+  transform: rotate(90deg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.input {
+  padding: 12px 14px;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 32px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3ecf8e;
+  box-shadow: 0 0 0 3px rgba(62, 207, 142, 0.15);
+}
+
+.submitBtn {
+  background: #3ecf8e;
+  border: none;
+  padding: 12px;
+  font-family: 'Outfit', sans-serif;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.submitBtn:hover {
+  background: #2b9264;
+}

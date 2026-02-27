@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.statsRow {
+  display: flex;
+  gap: 16px;
+}
+
+.middleRow {
+  display: flex;
+  gap: 24px;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.centercard {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 65%;
+}
+
+.salaryCard {
+  width: 35%;
+  flex-shrink: 0;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0);
+  padding: 0px;
+  border-radius: 12px;
+}

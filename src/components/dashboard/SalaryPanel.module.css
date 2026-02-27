@@ -1,0 +1,111 @@
+.salaryCard {
+  background: #f6f7fb;
+  border-radius: 36px;
+  padding: 20px;
+  box-shadow:
+    0px 1px 2px rgba(16, 24, 40, 0.04),
+    0px 4px 8px rgba(16, 24, 40, 0.04);
+  font-family: 'outfit', sans-serif;
+}
+
+.salaryCard:hover {
+  box-shadow:
+    0px 4px 12px rgba(16, 24, 40, 0.06),
+    0px 10px 20px rgba(16, 24, 40, 0.06);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.closeIcon {
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.monthSelector {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.monthSelector select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 990px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  appearance: none;
+  background: #ffffff;
+  font-family: 'outfit', sans-serif;
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.personName {
+  font-size: 14px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.siteName {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.amount {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.footer {
+  margin-top: 16px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+}
